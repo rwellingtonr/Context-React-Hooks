@@ -8,6 +8,7 @@ export const useCount = () => {
   // I must pass the context created through the useContext
   const context = useContext(CountContext)
   if (!context) throw new Error("Context hasn't been created yet")
+  //   These proprieties comes from the CountProvider
   const { count, setCount } = context
   return { count, setCount }
 }

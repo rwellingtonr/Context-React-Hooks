@@ -1,17 +1,23 @@
 import React from "react"
 import Counter from "./Component/Counter"
 import Mirror from "./Component/Mirror"
-import CountProvider from "./Context"
+import ThemeSwitch from "./Content/index"
+
+// Provider
+import CountProvider from "./Context/count.js"
+import ThemeProvider from "./Context/theme.js"
 
 const App = () => {
   return (
-    <CountProvider>
-      <div>
-        <Counter />
-        <hr />
-        <Mirror />
-      </div>
-    </CountProvider>
+    <ThemeProvider>
+      <CountProvider>
+        <ThemeSwitch>
+          <Counter />
+          <hr />
+          <Mirror />
+        </ThemeSwitch>
+      </CountProvider>
+    </ThemeProvider>
   )
 }
 

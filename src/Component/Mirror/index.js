@@ -1,5 +1,5 @@
 import React from "react"
-import { useCount } from "../../Context"
+import { useCount } from "../../Context/count"
 
 const Mirror = () => {
   const { count } = useCount()

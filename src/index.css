@@ -1,11 +1,12 @@
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: xx-large;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+button {
+  margin: 5px 5px 5px 0px;
+  height: 40px;
 }
