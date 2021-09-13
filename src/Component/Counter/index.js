@@ -10,7 +10,7 @@ const Counter = () => {
       <span>
         <b>Counter: {count} </b>
       </span>
-      <button type="submit" onClick={() => setCount()}>
+      <button type="submit" onClick={() => setCount(count + 1)}>
         Increase +1
       </button>
     </div>

@@ -7,8 +7,8 @@ export const CountContext = createContext()
 export const useCount = () => {
   // I must pass the context created through the useContext
   const context = useContext(CountContext)
-  const { count, setCount } = context
   if (!context) throw new Error("Context hasn't been created yet")
+  const { count, setCount } = context
   return { count, setCount }
 }
 
